@@ -167,35 +167,6 @@ $env:MAIL_RECEIVE_USERNAME="your-email@gmail.com"
 $env:MAIL_RECEIVE_PASSWORD="your-app-password"
 ```
 
-Then login from React and click **Sync Inbox** on the Inbox page.
-
-## API Endpoints
-
-### Auth
-
-```http
-POST /api/auth/register
-POST /api/auth/login
-```
-
-### Emails
-
-```http
-POST /api/emails/send
-GET  /api/emails/sent
-GET  /api/emails/inbox
-POST /api/emails/inbox/sync
-GET  /api/emails/{id}
-```
-
-### Admin
-
-```http
-GET /api/admin/users
-PUT /api/admin/users/{id}/status
-GET /api/admin/email-logs
-```
-
 ## Sample Login Request
 
 ```json
